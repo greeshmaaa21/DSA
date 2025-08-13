@@ -7,11 +7,11 @@ class Solution {
             currCount++;
         }
         else{
+            maxCount=Math.max(currCount , maxCount);
             currCount=0;
         }
-        if(currCount>maxCount)
-        maxCount=currCount;
+        
        }
-       return maxCount;
+       return Math.max(currCount,maxCount);
     }
 }
